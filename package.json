@@ -11,6 +11,7 @@
   },
   "scripts": {
     "build": "rm -fr ./dist && tsc",
+    "codecov": "codecov -s coverage",
     "show:coverage": "open ./coverage/lcov-report/index.html",
     "test": "jest --runInBand"
   },

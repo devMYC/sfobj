@@ -19,6 +19,6 @@ if (typeof obj.a.b().c[1].d()[unwrap] === 'number') {
   // do something here
 }
 
-// fallback to default value
+// Easier to set default value
 const name = obj.getUsers().list[0].name[unwrap] || ''
 ```
