@@ -12,7 +12,7 @@ module.exports = {
   },
   collectCoverage: true,
   coverageDirectory: '<rootDir>/coverage',
-  coverageReporters: [ 'lcov', 'text' ],
+  coverageReporters: [ 'json', 'lcov', 'text' ],
   coverageThreshold: {
     global: {
       branches: 90,
