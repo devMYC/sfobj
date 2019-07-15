@@ -1,3 +1,7 @@
+[![CircleCI](https://circleci.com/gh/devMYC/sfobj.svg?style=svg)](https://circleci.com/gh/devMYC/sfobj)
+
+[![codecov](https://codecov.io/gh/devMYC/sfobj/branch/master/graph/badge.svg)](https://codecov.io/gh/devMYC/sfobj)
+
 ```
 $ npm install sfobj
 ```
