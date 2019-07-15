@@ -1,0 +1,41 @@
+{
+  "name": "sfobj",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "description": "JS proxy for safe property access.",
+  "repository": "https://github.com/devMYC/sfobj.git",
+  "author": "Martin <mycha0@hotmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 6.0"
+  },
+  "scripts": {
+    "build": "rm -fr ./dist && tsc",
+    "show:coverage": "open ./coverage/lcov-report/index.html",
+    "test": "jest --runInBand"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.3",
+    "@types/sinon": "^5.0.5",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.19.1",
+    "sinon": "^7.3.2",
+    "source-map-support": "^0.5.12",
+    "ts-jest": "^23.10.4",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.5.1"
+  },
+  "peerDependencies": {
+    "source-map-support": "*"
+  },
+  "keywords": [
+    "safe",
+    "proxy",
+    "property",
+    "access",
+    "es6"
+  ]
+}
