@@ -15,20 +15,26 @@ type SafeProxy<T> = {
 export function Safe<T>(v: T): SafeProxy<T> {
   let curr = v
   const proxy: any = new Proxy(NeverFail, {
-    apply() {
+    apply(_, __, args) {
+      typeof curr === 'function' && (curr = curr(...args))
       return proxy
     },
     get(_, prop) {
+      let val: any
       switch (true) {
       case prop === unwrap:
-        const val = curr
+        val = curr
         curr = v
         return val
       case prop === Symbol.toPrimitive: return () => Safe.name
       case curr == null: break
       default:
-        curr = (curr as any)[prop]
-        typeof curr === 'function' && (curr = curr())
+        val = (curr as any)[prop]
+        if (typeof val === 'function') {
+          curr = val.bind(curr)
+        } else {
+          curr = val
+        }
         break
       }
       return proxy

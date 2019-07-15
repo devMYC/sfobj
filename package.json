@@ -1,6 +1,6 @@
 {
   "name": "sfobj",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./index.js",
   "description": "JS proxy for safe property access.",
   "repository": "https://github.com/devMYC/sfobj.git",
@@ -10,7 +10,7 @@
     "node": ">= 6.0"
   },
   "scripts": {
-    "build": "rm -fr ./dist && tsc",
+    "build": "rm -fr ./dist && tsc && cp ./package.json ./dist",
     "codecov": "codecov -f ./coverage/coverage-final.json",
     "show:coverage": "open ./coverage/lcov-report/index.html",
     "test": "jest --runInBand"
