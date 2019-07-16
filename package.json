@@ -3,7 +3,11 @@
   "version": "1.0.1",
   "main": "./index.js",
   "description": "JS proxy for safe property access.",
-  "repository": "https://github.com/devMYC/sfobj.git",
+  "homepage": "https://github.com/devMYC/sfobj#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devMYC/sfobj.git"
+  },
   "author": "Martin <mycha0@hotmail.com>",
   "license": "MIT",
   "engines": {
