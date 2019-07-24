@@ -21,6 +21,7 @@ module.exports = {
       statements: 90,
     },
   },
+  reporters: [ 'default', 'jest-junit' ],
   transformIgnorePatterns: [
     '/coverage/',
     '/dist/',
